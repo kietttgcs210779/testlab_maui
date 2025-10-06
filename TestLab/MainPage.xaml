@@ -22,9 +22,9 @@
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="Try a new language."
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                SemanticProperties.Description="Try a new language."
                 FontSize="18"
                 HorizontalOptions="Center" />
 
@@ -34,6 +34,20 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
+
+            <Button
+                x:Name="SendMessage"
+                Text="Send Message"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="SendMessage_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="TakeNotePage"
+                Text="Take Note"
+                SemanticProperties.Hint="Take Note"
+                Clicked="TakeNotePage_Clicked"
+                HorizontalOptions="Fill" />
 
         </VerticalStackLayout>
     </ScrollView>

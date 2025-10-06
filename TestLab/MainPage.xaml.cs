@@ -20,6 +20,16 @@ public partial class MainPage : ContentPage
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
+
+    private async void SendMessage_Clicked(System.Object sender, System.EventArgs e)
+    {
+		await DisplayAlert("Alert message test?", "This is try message.", "ok");
+    }
+
+    private async void TakeNotePage_Clicked(System.Object sender, System.EventArgs e)
+    {
+		await Navigation.PushAsync(new TakeNotePage());
+    }
 }
 
 
